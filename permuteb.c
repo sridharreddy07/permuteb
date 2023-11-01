@@ -20,13 +20,8 @@ int main() {
     for(int i = 0;i<8;i++)
     {
         value[i]= (final >> cout) & 0xF;
-        if(value[i]==i)
-        {
-        printf("%X", byte[i]);
-        cout= cout-4;
-        i=0;
-        
-        }
+        printf("%X", byte[value[i]]);
+        cout = cout-4;
     }
     //printf("%X", byte[5]);
     return 0;
